@@ -1,73 +1,68 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
     <head>
-        <title> Gallery </title>
-        <style>
-            
-            
-            
-           body {
-  background-image: url('images/background2.jpg');
-} 
-            
-            
-            
-            * {
-                box-sizing: border-box;
-            }
-            
-            .column {
-                float: left;
-                width: 33.33%;
-                padding: 5px;
-            }
-            
-            /* Clearfix (clear floats) */
-            .row::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
-            
-            
-            body {
-                background:  url('images/background2.jpg');
-                font-family: Georgia, serif;
-                 padding:15px;
-                line-height:1.4em }
-                
-                img {
-  border: 5px solid #555;
-}
-            </style>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Gallery</title>
+                <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div style="background-color:pink;color:black;border:1px solid black;width: 550px;height:25px;font-size:16px;">
-            <nav><strong> 
-            <a href="aboutme.html"> About Me |</a>
-            <a href="gallery.html"> Gallery |</a>
-            <a href="resume.html"> Resume |</a>
-            <a href="reflection.html"> Reflection |</a>
-            <a href="videogamereview.html"> Video Game Review</a>
-      </strong>  </nav> </div>
-        <div class="row">
-            <div class="column">
-                <img src="images/chelsea9.jpg" alt="Chelsea" style="width:50%">
-        </img>    </div>
-            <div class="column">
-                <img src="images/chelsea10.jpg" alt="Chelsea" style="width:50%">
-           </img> </div>
-            <div class="column">
-                <img src="images/chelsea11.jpg" alt="Chelsea" style="width:50%">
-           </img> </div>
-            <div class="column">
-                <img src="images/driving.jpg" alt="Erie Sunset" style="width:100%">
-         </img>   </div>
-            <div class="column">
-                <img src="images/ocean.jpg" alt="Ocean" style="width:150%">
-         </img>   </div>
-        </div>
+        <header>
+            <h1>Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="gallery">
+                
+                <div class="container">
+                    <h2> Moments That Matter </h2>
+                    <div class="photo">
+                        
+                        <img src="images/walkway.jpg" alt="Photo 1" style="display: block;">
+                            <p>Behrend Walkway</p>
+                    </div>
+                    
+                    <div class="photo" style="display: none;">
+                        <img src="images/driving.jpg" alt="Photo 2">
+                            <p>Evening Drives</p>
+                    </div>
+                    
+                    <div class="photo" style="display: none;">
+                        <img src="images/chelsea9.jpg" alt="Photo 3">
+                            <p><!--No caption--></p>
+                    </div>
+                    
+                    <div class="photo" style="display: none;">
+                        <img src="images/chelsea11.jpg" alt="Photo 4">
+                            <p> My grandmother  </p>
+                    </div>
+                    <div class="photo" style="display: none;">
+                        <img src="images/chelsea10.jpg" alt="Photo 5">
+                            <p> My beautiful wife Jenny </p>
+                    </div>
+                    <div class="photo" style="display: none;">
+                        <img src="images/ocean.jpg" alt="Photo 6">
+                            <p> Laguna, CA </p>
+                    </div>
+                    <div class="gallery-controls">
+                        <button id="prevButton">Previous</button>
+                        <button id="nextButton">Next</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Chelsea Quijas | My Portfolio | All Rights Reserved </p>
+        </footer>
+        <script src="script.js"></script>
     </body>
-    
-    
 </html>
