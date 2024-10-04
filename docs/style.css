@@ -124,12 +124,22 @@ footer p {
   font-size: 0.9rem;
 }
 
+.project-section h2, 
+.project-2-section h2, 
+.project-3-section h2,
+.update-section h2,
+.first-section h2 {
+  font-size: 1.1rem;
+  color: #fff; 
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
 
 .project-section, 
 .project-2-section, 
-.project-3-section,
-.update-section,
-.first-section {
+.project-3-section
+{
   text-align: center; 
   margin: 20px auto; 
   padding: 20px;               
@@ -140,7 +150,8 @@ footer p {
 .project-2-section h2, 
 .project-3-section h2,
 .update-section h2,
-.first-section h2 {
+.first-section h2
+ {
   font-size: 2rem;
   color: #ffffff;
   margin-bottom: 20px;
