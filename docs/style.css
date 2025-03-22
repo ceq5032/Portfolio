@@ -210,7 +210,8 @@ footer p {
 }
 
 .text-container p, 
-.text-container2 p {
+.text-container2 p,
+.text-container3 {
   margin-bottom: 15px; 
 }
 
