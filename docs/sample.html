@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FullPage Test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css">
+    <style>
+        section {
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+        }
+        #section1 { background-color: #3f0f7a; }
+        #section2 { background-color: #541f95; }
+        #section3 { background-color: #562c83; }
+    </style>
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section" id="section1">Welcome</div>
+    <div class="section" id="section2">Portfolio</div>
+    <div class="section" id="section3">Contact</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.js"></script>
+<script>
+    new fullpage('#fullpage', {
+        autoScrolling: true,
+        navigation: true,
+        anchors: ['home', 'portfolio', 'contact'],
+        navigationTooltips: ['Home', 'Portfolio', 'Contact'],
+        showActiveTooltip: true
+    });
+</script>
+
+</body>
+</html>
